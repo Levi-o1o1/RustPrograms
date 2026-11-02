@@ -26,8 +26,18 @@ impl Animal for Cat{
 fn main(){
     Dog::make_sound();
     Cat::make_sound();
+    Tiger::eat();
 }
 
+// trait with functions impl
+
+trait Animal2{
+    fn eat(){
+        println!("Animal is eating!");
+    }
+}
+   struct Tiger;
+   impl Animal2 for Tiger{}
 
 
 
