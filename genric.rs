@@ -1,4 +1,4 @@
-// traits and generics 
+// Generics 
 // this is a program for largest number in a vector  its non-generic version
 /*fn largest(list: &[i32]) -> i32{
     let mut largest = list[0];
