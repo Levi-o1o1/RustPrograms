@@ -13,4 +13,31 @@ fn main(){
     let signal = TrafficLight::Green;
 
     println!("You can go !");
+
+    println!("{:?}",instruction());
+}
+
+
+//enum with match (*imp)
+
+enum Tlight{
+    Red,
+    Green,
+    Yellow,
+}
+
+fn instruction(){
+    let signal = Tlight::Green;
+
+    match signal{
+        Tlight::Red => {
+            println!("Stop");
+        }
+        Tlight::Green => {
+            println!("Go");
+        }
+        Tlight::Yellow => {
+            println!("not now");
+        }
+    }
 }
