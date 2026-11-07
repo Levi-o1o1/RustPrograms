@@ -1,20 +1,16 @@
-enum TrafficLight{ // one an enum exactly one of these variants at a time
-    Red,  // variants without any data
+// enum(enumeration) is a custom data type that allow you to define a set of possible
+// variants(choices).
+// think of it : one variable, multiple possible choices, but only one active choice at a time
+
+enum TrafficLight{   // pascal case is not allow in rust only camel or snake case name only
+    Red,   // make sure it uppercase
     Yellow,
     Green,
-
-
 }
-
 
 fn main(){
 
-    let light = TrafficLight::Red;
-   
+    let signal = TrafficLight::Green;
 
-    match light{
-        TrafficLight::Red => println!("Stop"),
-        TrafficLight::Yellow => println!("not now"),
-        TrafficLight::Green => println!("Go go go ."),
-    }
+    println!("You can go !");
 }
