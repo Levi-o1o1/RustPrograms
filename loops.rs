@@ -30,5 +30,12 @@ fn main(){
     for i in 1..5 {
         println!("{i}");
     }
+   
+    // loop in array
+
+    let elements:[i32; 5] = [2,3,4,5,4];
+    for i in elements{
+        println!(" ele's : {}", i)
+    }
 
 }
