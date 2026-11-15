@@ -1,7 +1,7 @@
 fn main(){
 
 
-    // loops
+    // for loop
 
     let mut cout : i32 =0;
 
@@ -12,6 +12,23 @@ fn main(){
         }
     };
 
-    println!("loop result is : {}", result)
+    println!("loop result is : {}", result);
+
+    // while loop 
+
+    let mut n: i32 = 5;
+
+    while n!= 0{
+        println!("{}",n);
+        n-=1;
+    }
+    println!("hello");
+
+
+    //range loop
+
+    for i in 1..5 {
+        println!("{i}");
+    }
 
 }
