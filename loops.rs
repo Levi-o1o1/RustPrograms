@@ -1,7 +1,6 @@
 fn main(){
 
 
-    //let number : i32 = 5;
     // loops
 
     let mut cout : i32 =0;
@@ -14,4 +13,5 @@ fn main(){
     };
 
     println!("loop result is : {}", result)
+
 }
